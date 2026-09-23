@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ko" class="h-full bg-slate-50">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백화점 8F/9F 리뉴얼 고객 사전설문조사 센터</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Inter & Noto Sans KR -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans KR"', '"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fbf7f5',
+                            100: '#f6ede9',
+                            200: '#ebd8cf',
+                            500: '#9e2a2b',
+                            600: '#861e22',
+                            700: '#6f161a',
+                            900: '#3f0b0d',
+                        },
+                        gold: {
+                            500: '#c5a059',
+                            600: '#b08b46',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .custom-shadow {
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 4px 12px -2px rgba(0, 0, 0, 0.03);
+        }
+        .custom-shadow-hover:hover {
+            box-shadow: 0 20px 40px -10px rgba(158, 42, 43, 0.12), 0 8px 20px -4px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-slate-800 min-h-full flex flex-col justify-between selection:bg-brand-500 selection:text-white">
+
+    <!-- Top Header Navigation -->
+    <header class="sticky top-0 z-40 w-full glass-card border-b border-slate-200/80 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Brand Title / Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-brand-500 flex items-center justify-center text-white shadow-md shadow-brand-500/20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0h4m-4 0V11m0 0h4m-4 0H9m4 0V5m0 0h-4m4 0H9" />
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold tracking-widest text-brand-500 uppercase block">Shinsegae Retail Research</span>
+                        <h1 class="text-base sm:text-lg font-bold text-slate-900 tracking-tight leading-none">고객 사전설문조사 센터</h1>
+                    </div>
+                </div>
+
+                <!-- Right Side Action & Status -->
+                <div class="flex items-center space-x-3">
+                    <a href="../index.html" class="inline-flex items-center px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-700 hover:text-brand-600 bg-slate-100 hover:bg-brand-50 border border-slate-200 transition-all">
+                        <svg class="w-4 sm:w-4.5 h-4 sm:h-4.5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                        </svg>
+                        홈으로
+                    </a>
+
+                    <span class="hidden sm:inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200/60">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2"></span>
+                        실시간 설문 진행 중
+                    </span>
+                    <span class="hidden sm:inline-block text-xs text-slate-500 font-medium bg-slate-100 px-3 py-1 rounded-full">총 5개 항목</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow pb-16">
+        <!-- Hero Header Section -->
+        <section class="relative bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white py-14 px-4 sm:px-6 lg:px-8 overflow-hidden">
+            <!-- Background Decorative Grid -->
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand-500/20 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="relative max-w-4xl mx-auto text-center space-y-4">
+                <span class="inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-medium bg-gold-500/20 text-gold-500 border border-gold-500/30">
+                    <svg class="w-3.5 h-3.5 mr-1.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    8F / 9F 공간 공간 기획 프로젝트
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
+                    백화점 8F·9F 패밀리 & 라이프스타일 존<br class="hidden sm:block"/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-orange-100 to-white">고객 수요 및 만족도 사전조사</span>
+                </h2>
+                <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
+                    고객님의 소중한 경험과 의견을 반영하여 더욱 특별하고 만족스러운 패밀리 & 라이프스타일 컬처 공간으로 거듭나겠습니다. 원하시는 설문 항목을 선택하여 참여해 주세요.
+                </p>
+                
+                <!-- Quick Info Stats -->
+                <div class="pt-4 flex flex-wrap justify-center gap-4 text-xs sm:text-sm text-slate-300">
+                    <div class="flex items-center space-x-1.5 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-lg border border-white/10">
+                        <svg class="w-4 h-4 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        <span>소요시간: 각 설문당약 2~3분</span>
+                    </div>
+                    <div class="flex items-center space-x-1.5 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-lg border border-white/10">
+                        <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        <span>익명성 보장 & 외부 전용 조사</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Controls & Filter Section -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 relative z-10">
+            <div class="bg-white rounded-2xl p-4 sm:p-5 custom-shadow border border-slate-200/80 flex flex-col md:flex-row items-center justify-between gap-4">
+                
+                <!-- Category Filter Buttons -->
+                <div class="flex flex-wrap items-center gap-2 w-full md:w-auto" id="filterContainer">
+                    <button onclick="filterCards('all')" class="filter-btn active-filter px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-900 text-white shadow-sm">
+                        전체 보기 (5)
+                    </button>
+                    <button onclick="filterCards('experience')" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium text-slate-600 hover:bg-slate-100 transition-all">
+                        이용 경험 & 만족도
+                    </button>
+                    <button onclick="filterCards('renewal')" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium text-slate-600 hover:bg-slate-100 transition-all">
+                        공간 리뉴얼
+                    </button>
+                    <button onclick="filterCards('centum')" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium text-slate-600 hover:bg-slate-100 transition-all">
+                        센텀시티점 특화
+                    </button>
+                </div>
+
+                <!-- Search Input Box -->
+                <div class="relative w-full md:w-72">
+                    <input type="text" id="searchInput" onkeyup="searchCards()" placeholder="설문 제목 검색..." 
+                        class="w-full pl-9 pr-4 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-all bg-slate-50 focus:bg-white">
+                    <svg class="w-4 h-4 text-slate-400 absolute left-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Survey Cards Grid Container -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="cardsGrid">
+
+                <!-- CARD 1 -->
+                <div class="survey-card group bg-white rounded-2xl border border-slate-200/90 p-6 flex flex-col justify-between custom-shadow custom-shadow-hover transition-all duration-300 transform hover:-translate-y-1 cursor-pointer" 
+                     data-category="experience" data-title="백화점 8F/9F 패밀리 & 라이프스타일 컬처존 이용 경험 및 만족도 조사"
+                     onclick="openSurvey('https://forms.gle/dfrE2nHRrjLHnG4w6')">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-rose-50 text-brand-600 border border-rose-100">
+                                만족도 조사
+                            </span>
+                            <span class="text-xs text-slate-400 flex items-center">
+                                <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                약 2분 소요
+                            </span>
+                        </div>
+
+                        <div>
+                            <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2 leading-snug">
+                                백화점 8F/9F 패밀리 & 라이프스타일 컬처존 이용 경험 및 만족도 조사
+                            </h3>
+                            <p class="mt-2.5 text-xs sm:text-sm text-slate-500 line-clamp-3 leading-relaxed">
+                                기존 백화점 8~9층 컬처존의 이용 경험과 만족도, 개선 필요 사항에 대한 의견을 수렴하여 개선안을 도출하기 위한 설문입니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-medium text-slate-400">구글 폼 설문</span>
+                        <a href="https://forms.gle/dfrE2nHRrjLHnG4w6" target="_blank" rel="noopener noreferrer" 
+                           onclick="event.stopPropagation()"
+                           class="inline-flex items-center text-xs font-semibold text-brand-600 group-hover:text-brand-700 group-hover:translate-x-0.5 transition-all">
+                            설문 참여하기
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="survey-card group bg-white rounded-2xl border border-slate-200/90 p-6 flex flex-col justify-between custom-shadow custom-shadow-hover transition-all duration-300 transform hover:-translate-y-1 cursor-pointer" 
+                     data-category="renewal" data-title="[사전 수요조사] 8-9F 패밀리 & 라이프스타일 공간 리뉴얼 고객 조사"
+                     onclick="openSurvey('https://docs.google.com/forms/d/e/1FAIpQLSdehs0Xii5rgyIoRenn43edNm1_HJk1fPFWPb5ykcSHWGp-dQ/viewform')">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-100">
+                                공간 리뉴얼
+                            </span>
+                            <span class="text-xs text-slate-400 flex items-center">
+                                <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                약 3분 소요
+                            </span>
+                        </div>
+
+                        <div>
+                            <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2 leading-snug">
+                                [사전 수요조사] 8-9F 패밀리 & 라이프스타일 공간 리뉴얼 고객 조사
+                            </h3>
+                            <p class="mt-2.5 text-xs sm:text-sm text-slate-500 line-clamp-3 leading-relaxed">
+                                신규 리뉴얼 예정인 8-9층 패밀리 & 라이프스타일 공간의 카테고리 구성 및 희망 브랜드에 관한 고객 사전 수요 조사입니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-medium text-slate-400">구글 폼 설문</span>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdehs0Xii5rgyIoRenn43edNm1_HJk1fPFWPb5ykcSHWGp-dQ/viewform" target="_blank" rel="noopener noreferrer" 
+                           onclick="event.stopPropagation()"
+                           class="inline-flex items-center text-xs font-semibold text-brand-600 group-hover:text-brand-700 group-hover:translate-x-0.5 transition-all">
+                            설문 참여하기
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="survey-card group bg-white rounded-2xl border border-slate-200/90 p-6 flex flex-col justify-between custom-shadow custom-shadow-hover transition-all duration-300 transform hover:-translate-y-1 cursor-pointer" 
+                     data-category="renewal" data-title="[사전 수요조사] 백화점 8F·9F 패밀리 & 라이프스타일 존 리뉴얼 고객 설문"
+                     onclick="openSurvey('https://docs.google.com/forms/d/1p-2DYItur2IltwtX-JAsAHvo7xHw3tp-GvBLcj11GIo/edit')">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-100">
+                                라이프스타일
+                            </span>
+                            <span class="text-xs text-slate-400 flex items-center">
+                                <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                약 2분 소요
+                            </span>
+                        </div>
+
+                        <div>
+                            <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2 leading-snug">
+                                [사전 수요조사] 백화점 8F·9F 패밀리 & 라이프스타일 존 리뉴얼 고객 설문
+                            </h3>
+                            <p class="mt-2.5 text-xs sm:text-sm text-slate-500 line-clamp-3 leading-relaxed">
+                                패밀리 방문 고객을 위한 맞춤형 라이프스타일존 구성을 위해 고객분들의 라이프스타일과 구매 트렌드를 파악합니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-medium text-slate-400">구글 폼 설문</span>
+                        <a href="https://docs.google.com/forms/d/1p-2DYItur2IltwtX-JAsAHvo7xHw3tp-GvBLcj11GIo/edit" target="_blank" rel="noopener noreferrer" 
+                           onclick="event.stopPropagation()"
+                           class="inline-flex items-center text-xs font-semibold text-brand-600 group-hover:text-brand-700 group-hover:translate-x-0.5 transition-all">
+                            설문 참여하기
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="survey-card group bg-white rounded-2xl border border-slate-200/90 p-6 flex flex-col justify-between custom-shadow custom-shadow-hover transition-all duration-300 transform hover:-translate-y-1 cursor-pointer" 
+                     data-category="renewal" data-title="[사전 수요 조사] 8F/9F 공존형 리테일 CX 공간 사전 설문"
+                     onclick="openSurvey('https://docs.google.com/forms/d/1wpQkqW23WvPe82IaprVbPjzlDRHRlPWTfDYRa8Ly2AA/edit')">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-purple-50 text-purple-700 border border-purple-100">
+                                공존형 CX 공간
+                            </span>
+                            <span class="text-xs text-slate-400 flex items-center">
+                                <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                약 3분 소요
+                            </span>
+                        </div>
+
+                        <div>
+                            <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2 leading-snug">
+                                [사전 수요 조사] 8F/9F 공존형 리테일 CX 공간 사전 설문
+                            </h3>
+                            <p class="mt-2.5 text-xs sm:text-sm text-slate-500 line-clamp-3 leading-relaxed">
+                                쇼핑뿐만 아니라 휴식, F&B, 문화 체험이 통합된 공존형 리테일 CX(고객 경험) 공간 설계를 위한 선호도 조사입니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-medium text-slate-400">구글 폼 설문</span>
+                        <a href="https://docs.google.com/forms/d/1wpQkqW23WvPe82IaprVbPjzlDRHRlPWTfDYRa8Ly2AA/edit" target="_blank" rel="noopener noreferrer" 
+                           onclick="event.stopPropagation()"
+                           class="inline-flex items-center text-xs font-semibold text-brand-600 group-hover:text-brand-700 group-hover:translate-x-0.5 transition-all">
+                            설문 참여하기
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="survey-card group bg-white rounded-2xl border border-slate-200/90 p-6 flex flex-col justify-between custom-shadow custom-shadow-hover transition-all duration-300 transform hover:-translate-y-1 cursor-pointer" 
+                     data-category="centum" data-title="[신세계 센텀시티점] 패밀리 리테일 존 리뉴얼 사전 수요조사"
+                     onclick="openSurvey('https://docs.google.com/forms/d/1OEQKwzdT4OwcCikGDTu1C8GplBfNJ-HVUjKdAGe1kU0/edit#responses4')">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-100">
+                                센텀시티점
+                            </span>
+                            <span class="text-xs text-slate-400 flex items-center">
+                                <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                약 2분 소요
+                            </span>
+                        </div>
+
+                        <div>
+                            <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2 leading-snug">
+                                [신세계 센텀시티점] 패밀리 리테일 존 리뉴얼 사전 수요조사
+                            </h3>
+                            <p class="mt-2.5 text-xs sm:text-sm text-slate-500 line-clamp-3 leading-relaxed">
+                                센텀시티점 8, 9층 방문 고객을 대상으로 한 패밀리 특화 리테일존 리뉴얼 관련 집중 의견수렴 설문입니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-medium text-slate-400">구글 폼 설문</span>
+                        <a href="https://docs.google.com/forms/d/1OEQKwzdT4OwcCikGDTu1C8GplBfNJ-HVUjKdAGe1kU0/edit#responses4" target="_blank" rel="noopener noreferrer" 
+                           onclick="event.stopPropagation()"
+                           class="inline-flex items-center text-xs font-semibold text-brand-600 group-hover:text-brand-700 group-hover:translate-x-0.5 transition-all">
+                            설문 참여하기
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Empty Search State -->
+            <div id="noResults" class="hidden text-center py-16 bg-white rounded-2xl border border-slate-200 mt-6">
+                <svg class="w-12 h-12 mx-auto text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 9.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <p class="mt-4 text-base font-semibold text-slate-700">검색 결과가 없습니다</p>
+                <p class="mt-1 text-xs text-slate-500">다른 키워드나 필터를 선택해 주세요.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+            <div class="flex items-center space-x-2">
+                <span class="font-bold text-slate-800">SHINSEGAE RETAIL RESEARCH</span>
+                <span>|</span>
+                <span>8F/9F 패밀리 & 라이프스타일 리뉴얼 TF</span>
+            </div>
+            <p>© 2026 Customer Experience Research Team. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Open survey link in a new window/tab securely
+        function openSurvey(url) {
+            window.open(url, '_blank', 'noopener,noreferrer');
+        }
+
+        // Category Filtering Logic
+        function filterCards(category) {
+            const cards = document.querySelectorAll('.survey-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            // Update Active Button Styling
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-slate-900', 'text-white', 'shadow-sm', 'active-filter');
+                btn.classList.add('text-slate-600', 'hover:bg-slate-100');
+            });
+
+            event.currentTarget.classList.remove('text-slate-600', 'hover:bg-slate-100');
+            event.currentTarget.classList.add('bg-slate-900', 'text-white', 'shadow-sm', 'active-filter');
+
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                if (category === 'all' || cardCategory === category) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            toggleNoResults(visibleCount === 0);
+        }
+
+        // Search Input Filter Logic
+        function searchCards() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const cards = document.querySelectorAll('.survey-card');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const title = card.getAttribute('data-title').toLowerCase();
+                if (title.includes(query)) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            toggleNoResults(visibleCount === 0);
+        }
+
+        // Display empty result message if no matches found
+        function toggleNoResults(show) {
+            const noResults = document.getElementById('noResults');
+            if (show) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
